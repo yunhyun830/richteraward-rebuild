@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+model Notice{
+  id Int @id @default(autoincrement())
+  noticeTitle   String
+  noticeText    String @db.LongText
+  createdAt     DateTime
+  updatedAt     DateTime
+}
+model WriteForm{
+  id              Int @id @default(autoincrement())
+  site            String
+  firstName       String
+  lastName        String
+  birthday        String
+  school          String?
+  ageProof        String
+  teamMember      String?
+  section         String
+  ageCategory     String
+  email           String
+  phone           String
+  videoLink       String
+  depostisor      String
+  teacher         String
+  teacherEmail    String
+  performingPiece Json
+}
