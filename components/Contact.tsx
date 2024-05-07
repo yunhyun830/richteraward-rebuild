@@ -80,7 +80,7 @@ export default function Contact() {
             {contactText?.email}
             </h2>
             <h2 className="text-white font-thin tracking-tight lg:text-xl text-xs lg:mt-10 mt-5">
-              kmat0@nationalux.org
+            kmat@nationalux.cafe24.com
             </h2>
           </motion.div>
 
